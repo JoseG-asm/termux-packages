@@ -168,6 +168,8 @@ jobs:
             cd ./scripts
             docker build -t ghcr.io/termux/package-builder:latest .
             cd ..
+            
+            ./scripts/update-docker.sh
           fi
         fi
 
